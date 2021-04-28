@@ -1,0 +1,66 @@
+<!DOCTYOE hmtl>
+<html lang="pt-br"> <!--<p> quando for buscar o seu site no google ele altomaticamente vai saber q é do brasil</p>-->
+
+<head>
+    <meta charset="UTF-8"/>  <!--<p> utf-8 serve pra poder usar asentuação nas palavras</p>-->
+    <title>tudo sobre google glass</title>
+    <link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
+    <link rel="stylesheet" type="text/css" href="_css/specs.css"/>
+    <script language="javascript" src="_javascript/funcoes.js"></script>
+        
+    
+    <body style="background-color: -moz-buttonhoverface"><!-- <p> mudando a cor do fundo da pagina em body=corpo </p> -->
+        <div id="interface">
+<header id="cabecalho">
+    <hgroup ><!-- <p> ele incicando o inicio e fim do cabecalho </p> -->
+        <hgroup> <!-- <p>ele esta marcando um grupo de titulos html</p>-->
+            <h1>Google Glass</h1>
+            <h2>A revolução do Google está chegando</h2>
+        </hgroup>
+        <img id="icone" src="_imagens/../_imagens/especificacoes.png"/> <!-- <p> src= origem do destino</p>-->
+      <nav id="menu"> <!-- <p> quando for criar menu por exemplo. modo facil de acessar outro conteudo dentro da pagina</p> -->
+            <h1> Menu Principal</h1>
+        <ul type="disc"> <!--<p>type=(algarimos romanos letras e numeors) start=""( de onde vai comecar e so recebe numero ex: 3==c) </p>-->
+                <li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/../_imagens/especificacoes.png')"><a href="index.html">home</a></li>
+                <li onmouseover="mudaFoto('_imagens/especificacoes.png')" onmouseout="mudaFoto('_imagens/../_imagens/especificacoes.png')"><a href="index.html"><a href="specs.html">Especificações</a> </li>
+                <li onmouseover="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/../_imagens/especificacoes.png')"><a href="index.html"><a href="fotos.html">fotos</a></li>
+                <li onmouseover="mudaFoto('_imagens/multimidia.png')" onmouseout="mudaFoto('_imagens/../_imagens/especificacoes.png')"><a href="index.html"><a href="multimidia.html">multimidia</a></li>
+                <li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/../_imagens/especificacoes.png')"><a href="index.html"><a href="fale-conosco.html">fale conosco</a></li>
+        </ul> <!--<p>ol== lista ordenada aonde aparece a seguencia letra ou numero ------- ul== lista nao ordernada aonde aparece so os pontos de marca cao</p>-->
+      </nav>
+    </hgroup>
+</header>
+<section id="corpo-full">
+<header id="noticia-principal">  
+<hgroup>
+   <h3>Especificações</h3>
+<h1>Raio-X no Google Glass</h1>
+<h2> por Gustavo Guanabara</h2>
+<h3 class="direita">Atualizado em 01/Maio/2013</h3>
+</hgroup>
+</header>
+<p>Clique em qualquer área destacada da imagem para ter mais informações sobre os recursos do Google Glass. Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações.</p>
+
+
+<section id="conteudo">
+    <img class="mofador" src="_imagens/glass-esquema-marcado.jpg" usemap="#meumapa"/>
+    <map name="meumapa"> <!-- to utilizando mapa de imagem e na imagem q eu quero coloco como se fosse o id dele pra ter a relacao #meumapa -->
+        <area shape="rect" coords="272,258,179,204"href="google-glass.html#tela" target="janela"/><!-- shape é a forma q vai aparecer o item e o coods ta vendo a coodernada em um photoshop aonde realemente esta a marcacao em vermelho
+        href vai pegar aonde está o conteudo q no caso é no google-glass e target vai pegar o id od iframe q é name=janela -->
+        <area shape="circle" coords="175,259,142,230"href="google-glass.html#camera" target="janela"/>
+        <area shape="poly" coords="27,147,83,211,82,251,26,173"href="google-glass.html#sensores"target="janela"/>
+        <area shape="circle"coords="89,41,92,61,67,68,59,41"href="google-glass.html#bateria"target="janela"/>
+    </map>
+    <iframe  src="google-glass.html" name="janela" id="frame-spec"></iframe>
+
+</section>
+
+
+</section>
+<footer id="rodape"> <!-- aqui vai ser criado o rodape -->
+    <p>Copyright&copy; 2020 - by altair capiroto<br/>
+       <a href="http://www.faceook.com.br"target="_blank"> Facebook</a> | <a href="http://www.twitter.com"target="_blank">  Twitter</a></p>
+    </footer>
+</div>
+</body>
+</html>
